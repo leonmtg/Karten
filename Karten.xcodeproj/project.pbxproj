@@ -14,6 +14,7 @@
 		35EE8A192BA9DB5700E56274 /* KartenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE8A182BA9DB5700E56274 /* KartenTests.swift */; };
 		35EE8A232BA9DB5700E56274 /* KartenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE8A222BA9DB5700E56274 /* KartenUITests.swift */; };
 		35EE8A252BA9DB5700E56274 /* KartenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EE8A242BA9DB5700E56274 /* KartenUITestsLaunchTests.swift */; };
+		35EE8A332BA9DDBA00E56274 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 35EE8A322BA9DDBA00E56274 /* Dependencies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35EE8A332BA9DDBA00E56274 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = Karten;
+			packageProductDependencies = (
+				35EE8A322BA9DDBA00E56274 /* Dependencies */,
+			);
 			productName = Karten;
 			productReference = 35EE8A042BA9DB5600E56274 /* Karten.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 35EE89FB2BA9DB5600E56274;
+			packageReferences = (
+				35EE8A312BA9DDBA00E56274 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+			);
 			productRefGroup = 35EE8A052BA9DB5600E56274 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35EE8A312BA9DDBA00E56274 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35EE8A322BA9DDBA00E56274 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35EE8A312BA9DDBA00E56274 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35EE89FC2BA9DB5600E56274 /* Project object */;
 }
